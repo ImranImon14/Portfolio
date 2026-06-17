@@ -1,9 +1,11 @@
+/* ================== Font ================== */
 .homemade-apple-regular {
   font-family: "Homemade Apple", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
+/* ================== Carousel ================== */
 .carousel-item img {
   height: 100vh;
   width: auto;
@@ -15,6 +17,7 @@
   height: auto;
 }
 
+/* ================== Accordion ================== */
 .accordion-button {
   color: #0d6efd !important;
   font-weight: bold;
@@ -22,6 +25,7 @@
   font-size: medium;
 }
 
+/* ================== Section Title ================== */
 .section-title {
   font-weight: 700;
   letter-spacing: 1px;
@@ -31,19 +35,14 @@
 }
 
 /* ================== CGPA ================== */
-
 .cgpa-box {
   background: #ffffff;
   padding: 15px 20px;
   border-radius: 12px;
   box-shadow: 0 3px 10px rgba(0,0,0,0.08);
   transition: 0.3s ease;
-  max-width: 500px;        /* ❗ original */
-}
-
-/* 🔧 FIX: Bootstrap column এর ভেতরে ঠিকমতো বসার জন্য */
-.col-md-6 .cgpa-box{
-  max-width: 100%;
+  width: 100%;
+  margin: auto;
 }
 
 .cgpa-box .label {
@@ -51,10 +50,6 @@
   font-weight: 600;
   margin-bottom: 8px;
   color: #444;
-}
-
-/* 🔧 FIX: float বাদ, flex ব্যবহার */
-.cgpa-box .label{
   display: flex;
   justify-content: space-between;
 }
@@ -62,27 +57,22 @@
 .cgpa-box .label span {
   color: #666;
   font-weight: 500;
-  float: none;   /* ❗ override */
 }
 
 .custom-progress {
   height: 12px;
   border-radius: 20px;
   background-color: #e9ecef;
-  width: 80%;             /* ❗ original */
-}
-
-/* 🔧 FIX: column অনুযায়ী full width */
-.col-md-6 .custom-progress{
   width: 100%;
 }
 
 .custom-progress .progress-bar {
   border-radius: 20px;
   background: linear-gradient(90deg, #007bff, #69afff);
+  transition: width 0.5s ease;
 }
 
-
+/* Color variants */
 .bar-green {  
   background: linear-gradient(90deg, #28a745, #7be59b) !important;
 }
@@ -90,12 +80,59 @@
 .bar-orange { 
   background: linear-gradient(90deg, #ffc107, #ffe27a) !important;
 }
+
 .bar-teal { 
   background: linear-gradient(90deg, #20c997, #6ef1d2) !important;
 }
+
 .bar-magenta { 
   background: linear-gradient(90deg, #d63384, #ff7eb9) !important;
 }
+
 .bar-red { 
   background: linear-gradient(90deg, #dc3545, #ff6f7b) !important;
+}
+
+/* ================== Navbar Black + Green W3Schools style ================== */
+/* Navbar black + green W3Schools style */
+.navbar {
+  background-color: #000 !important; /* black background */
+}
+
+.navbar .navbar-brand {
+  color:  rgba(0, 128, 79, 0.959)!important; /* bright green text */
+  font-weight: bold;
+}
+
+.navbar .navbar-brand span {
+  color: yellow !important;
+}
+
+.navbar .nav-link {
+  color: #ffffff !important; /* links white */
+  transition: 0.3s;
+}
+
+.navbar .nav-link:hover {
+  background-color: rgba(0, 128, 79, 0.959) !important; /* green hover */
+  color: #000 !important; /* text black on hover */
+  border-radius: 5px;
+}
+
+.navbar .nav-link.active {
+  color: rgba(0, 128, 79, 0.959) !important; /* active link green */
+  font-weight: bold;
+}
+
+.navbar .dropdown-menu {
+  background-color: #000 !important; /* black dropdown */
+}
+
+.navbar .dropdown-item {
+  color: #ffffff !important;
+}
+
+.navbar .dropdown-item:hover {
+  background-color:rgba(0, 128, 79, 0.959) !important;
+  color: #000 !important;
 }
