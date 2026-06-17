@@ -15,52 +15,49 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
-<!-- f60ADTxoBpNAFUoUIFAAoCRug07qgH4RlVgXWVEyNuWnjRizYxfDcbegiwyJ9VfZQAHTZiPPxrhf4jskW12itdNfazoWy52r3X7e5Uv2LFg5HW5dujcAm1bB6AlS768 -->
 
 <body>
-  <h1>imon</h1>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+   <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand fs-1" href="#"><span class="text-warning">IMRAN</span>
-
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand fs-1" href="#"><span>IMRAN</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
         <li class="nav-item">
           <a class="nav-link active" href="#" onclick="scrollToSection('home')">Home</a>
-
         </li>
         <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#a" onclick="scrollToSection('about')">About</a>
+          <a class="nav-link" href="#" onclick="scrollToSection('about')">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" onclick="scrollToSection('education')">Education</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Achievement
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#"onclick="scrollToSection('Achievement')">Academic Result</a></li>
+            <li><a class="dropdown-item" href="#" onclick="scrollToSection('Achievement')">Academic Result</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#"onclick="scrollToSection('skills')">Skills</a></li>
+            <li><a class="dropdown-item" href="#" onclick="scrollToSection('skills')">Skills</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"onclick="scrollToSection('project')">Project</a>
+          <a class="nav-link" href="#" onclick="scrollToSection('project')">Project</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="#"onclick="scrollToSection('contact')">Contact</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="scrollToSection('contact')">Contact</a>
         </li>
       </ul>
-      
     </div>
   </div>
 </nav>
+
 
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -82,10 +79,55 @@
 </div>
 
 </header>
-<section class="bg-secondary text-white p-5"><div class="container-fluid">
+<!-- <section class="bg-secondary text-white p-5"><div class="container-fluid">
   <h4 data-aos="zoom-out" data-aos-duration="2000">Imran Hamid</h4>
   <h4>An Aspiring Software Developer</h4>
-</div></section>
+</div></section> -->
+<!-- Hero Section Start -->
+<section class="hero-section py-5">
+  <div class="container text-center">
+    <h1 class="mb-2">Imran Hamid</h1>
+    <h2 class="typed-text"></h2>
+  </div>
+</section>
+
+<style>
+.hero-section {
+  background: #6c757d;
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 80px 20px; /* Less vertical space */
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px; /* Less margin */
+}
+
+.typed-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  min-height: 40px; /* Prevent jump */
+}
+</style>
+
+<!-- Typed.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+var typed = new Typed('.typed-text', {
+  strings: ["An Aspiring Software Developer", "A Tech Enthusiast", "Student of Dept. of ICT,MBSTU",],
+  typeSpeed: 50,
+  backSpeed: 30,
+  startDelay: 300,
+  backDelay: 1000,
+  loop: true   // Continuous loop
+});
+</script>
+<!-- Hero Section End -->
+
 <section class="Home my-5" id="home">
 <div class="container-fluid">
   
@@ -139,7 +181,7 @@
   <hr class="w-25 m-auto my-4"></div>
 
 <div class="clearfix">
-  <img src="D4.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="MY Image">
+  <img src="D4.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
 <p>
 Hello! I’m Imran Hamid, currently pursuing a Bachelor of Science in Information and Communication Technology (ICT) and committed to continuous learning.<br><br>
 I have always been captivated by technology—not just the programming side, but also by how it enables efficient communication, empowers people, and drives innovation in our digital world.<br><br>
@@ -371,7 +413,7 @@ My aim is to apply what I have learned to create meaningful and impactful soluti
 .card-img-top {
   height: 300px;
   width: 100%;
-  object-fit: cover; /* অথবা contain */
+  object-fit: cover; 
 }
 </style>
 
@@ -427,6 +469,16 @@ My aim is to apply what I have learned to create meaningful and impactful soluti
       <div class="card-body">
         <h5 class="card-title"><a href="https://github.com/ImranImon14/Project/tree/main/Book_Recommended_System">Book Recommended System</a></h5>
         <p class="card-text">“A system that recommend books according to users interests.”</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card">
+      <img src="cipherimg.png" height="290" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><a href="https://imranimon14.github.io/CipherSuite/">Visual Cipher</a></h5>
+        <p class="card-text">“An interactive web tool that encrypts text and visualizes cryptographic steps in real time.”</p>
       </div>
     </div>
   </div>
@@ -502,9 +554,4 @@ function scrollToSection(id) {
 </body>
 
 
-
 </html>
-
-
-
-
